@@ -1,0 +1,24 @@
+{
+  "name": "ts-node-breakpoints-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rnegron/ts-node-breakpoints-example.git",
+  "author": "Raúl Negrón <raul.esteban.negron@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.13.1",
+    "yarn": "^1.19.1"
+  },
+  "private": true,
+  "scripts": {
+    "ls": "ls",
+    "debug": "mocha --require ts-node/register/transpile-only --file tests/greeter.js --recursive --no-timeouts --inspect-brk=0.0.0.0:9292 --exit tests/index.js"
+  },
+  "devDependencies": {
+    "expect": "^24.9.0",
+    "mocha": "^7.0.0",
+    "nock": "^11.7.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}

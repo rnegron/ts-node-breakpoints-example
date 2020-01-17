@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker-compose run \
+  --rm \
+  -p 9292:9292 \
+  test \
+  yarn run "$@"
